@@ -345,7 +345,7 @@ function parseModule(m) {
     // Stats.js filters out modules only https://github.com/webpack/webpack/blob/5433b8cc785c6e71c29ce5f932ae6595f2d7acb5/lib/Stats.js#L335
       .map(d => ({
         // again make sure to use string for id:
-        graphId: d.moduleId.toString(),
+        graphId: d.moduleId !== null && d.moduleId !== undefined ? d.moduleId.toString() : '',
         type: d.type,
       })),
     fileExtension: path.parse(m.name).ext,
