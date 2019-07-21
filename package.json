@@ -6,7 +6,8 @@
     "webpack-stats-graph": "index.js"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "archive.js"
   ],
   "dependencies": {
     "chalk": "^2.1.0",
